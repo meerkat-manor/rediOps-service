@@ -13,3 +13,6 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+microservice/api/rediops-service-server.gen.go
+microservice/api/rediops-service-types.gen.go
+microservice/data/*

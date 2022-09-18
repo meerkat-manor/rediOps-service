@@ -1,0 +1,130 @@
+{
+    "unique_id": "d2429b4f-394b-498b-88ff-33ce28751188",
+    "version": "0.0.1",
+    "created_on": "2022-03-04T15:43:21Z",
+    "updated_on": "2022-03-04T15:43:21Z",
+    "organisation": "Meerkat Manor Tech College",
+    "name": "Microservce and web site",
+    "asset": {
+        "id": "AID07828923",
+        "name": "website",
+        "url": ""
+    },
+    "owner": {
+        "email": "devops@meerkatmanor-tech.org",
+        "web": "meerkatmanor-tech.org",
+        "slack": "",
+        "twitter": "",
+        "matrix": "@devops:meerkat-manor.org"
+    },
+    "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/overview.md",
+    "repository": {
+        "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/repository.md",
+        "artefact": {
+            "category": "ARTEFACT",
+            "name": "docker",
+            "url": ""
+        },
+        "source": {
+            "category": "SOURCE",
+            "name": "git",
+            "url": "https://github.com/meerkat-manor/rediOps"
+        }
+    },
+    "dependency": {
+        "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/dependency.md",
+        "apis": [
+        ],
+        "tools": [
+        ]
+    },
+    "build": [
+        {
+            "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/build.md",
+            "engine": {
+                "category": "UNINSTALL",
+                "name": "some text",
+                "url": "some text"
+            },
+            "config": "some text",
+            "script": "some text"
+        }
+    ],
+    "test": [
+        {
+            "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/test.md",
+            "engine": {
+                "category": "SOURCE",
+                "name": "some text",
+                "url": "some text"
+            },
+            "config": "some text",
+            "script": "some text"
+        }
+    ],
+    "health": {
+        "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/health.md",
+        "api": [
+            {
+                "url": "/health",
+                "status": 200,
+                "response": "OK"
+            }
+        ]
+    },
+    "install": {
+        "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/install.md",
+        "engine": {
+            "category": "COMMAND",
+            "name": "bash"
+        },
+        "playbook": "",
+        "commands": {
+            "pre": [
+            ],
+            "script": "/deploy/install.sh",
+            "post": [
+            ]
+        }
+    },
+    "refresh": {
+        "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/refresh.md",
+        "engine": {
+            "category": "COMMAND",
+            "name": "bash"
+        },
+        "playbook": "",
+        "commands": {
+            "pre": [
+            ],
+            "script": "/deploy/refresh.sh",
+            "post": [
+            ]
+        }
+    },
+    "uninstall": {
+        "guide": "https://github.com/meerkat-manor/rediOps/blob/main/guide/uninstall.md",
+        "engine": {
+            "category": "COMMAND",
+            "name": "bash"
+        },
+        "playbook": "",
+        "commands": {
+            "pre": [
+            ],
+            "script": "/deploy/decommission.sh",
+            "post": [
+            ]
+        }
+    },
+    "apis": [
+        {
+            "guide": "https://github.com/meerkat-manor/rediOps",
+            "engine": {
+                "category": "API",
+                "name": "openapi",
+                "url": "https://raw.githubusercontent.com/meerkat-manor/rediOps/main/specification/rediops.json"
+            }
+        }
+    ]
+}
